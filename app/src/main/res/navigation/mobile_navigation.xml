@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="kz.informatics.okulik.ui.bolimder.BolimderFragment"
+        android:label="Бөлімдер"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="kz.informatics.okulik.ui.oiyn.OyinFragment"
+        android:label="Ойындар"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/cabinet"
+        android:name="kz.informatics.okulik.ui.cabinet.CabinetFragment"
+        android:label="Жеке кабинет"
+        tools:layout="@layout/fragment_cabinet" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="kz.informatics.okulik.ui.about.AboutFragment"
+        android:label="Ақпарат"
+        tools:layout="@layout/fragment_cabinet" />
+</navigation>

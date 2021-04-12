@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_bolimder"
+        android:title="Бөлімдер" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Ойындар" />
+
+    <item
+        android:id="@+id/cabinet"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Жеке кабинет" />
+
+    <item
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="About" />
+
+</menu>
