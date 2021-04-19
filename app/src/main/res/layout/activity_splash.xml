@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"
+    android:background="@color/dark_green"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -16,14 +16,15 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:padding="10dp"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/dp_icon" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:gravity="center"
-            android:text="4 сынып оқулығы"
+            android:text="ICT task"
+            android:layout_marginTop="10dp"
             android:textColor="@color/white"
             android:textSize="40sp"
             android:textStyle="bold" />

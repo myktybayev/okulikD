@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:gravity="center"
-                    android:text="Танымал браузерлермен танысу ойыны"
+                    android:text="@string/game1_upai"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -48,7 +48,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:gravity="center"
-                    android:text="Почтаны сәйкестендіру ойыны"
+                    android:text="@string/game2_upai"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -64,6 +64,7 @@
             android:orientation="horizontal">
 
             <RelativeLayout
+                android:id="@+id/rl_oyin3"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:layout_margin="5dp"
@@ -74,14 +75,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:gravity="center"
-                    android:text="3-ойын"
+                    android:text="@string/game3_upai"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
-
             <RelativeLayout
+                android:id="@+id/rl_oyin4"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:layout_margin="5dp"
@@ -92,9 +93,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:gravity="center"
-                    android:text="4-ойын"
+                    android:text="@string/game4_upai"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -119,9 +120,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:gravity="center"
-                    android:text="5-ойын"
+                    android:text="@string/game5_upai"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -137,9 +138,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:gravity="center"
-                    android:text="6-ойын"
+                    android:text="@string/game6_upai"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 

@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:padding="10dp"
-            android:src="@drawable/ic_home_black_24dp" />
+            android:src="@mipmap/ic_launcher_round" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

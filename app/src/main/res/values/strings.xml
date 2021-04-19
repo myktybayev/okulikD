@@ -1,8 +1,22 @@
 <resources>
-    <string name="app_name">Okulik</string>
+    <string name="app_name">ICTask</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="fill_all">Ақпаратты толтырыңыз</string>
+
+    <string name="game1_name">§ 27. Интернетке деректер жіберу: Танымал браузерлермен танысу</string>
+    <string name="game2_name">§ 28. Электронды поштамен файлдарды қабылдау және жіберу. Почтаны сәйкестендіру</string>
+    <string name="game3_name">§ 29. Пароль сенімділігі. Почтаны дұрыс жина</string>
+    <string name="game4_name">§ 30. Интернетке деректер жіберу. Жоба құру. Почта сервер суреттерін табу</string>
+    <string name="game5_name">§ 31. Пароль сенімділігі. Жоба құру. Ең көп почтаны құрастыр</string>
+    <string name="game6_name">§ 32. Болашақтағы компьютерлер. Ең қиын пароль құрастыр</string>
+
+    <string name="game1_upai">Танымал браузерлермен танысу</string>
+    <string name="game2_upai">Почтаны сәйкестендіру</string>
+    <string name="game3_upai">Почтаны дұрыс жина</string>
+    <string name="game4_upai">Почта сервер суреттерін табу</string>
+    <string name="game5_upai">Ең көп почтаны құрастыр</string>
+    <string name="game6_upai">Ең қиын пароль құрастыр</string>
 
 </resources>

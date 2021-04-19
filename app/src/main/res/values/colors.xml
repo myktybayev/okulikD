@@ -14,9 +14,12 @@
     <color name="upai_red">#B71C1C</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="green">#33691E</color>
+    <color name="grey">#EAEAEA</color>
 
 
     <color name="color1">#FFBB86FC</color>
     <color name="color2">#FF03DAC5</color>
     <color name="color3">#F57F17</color>
+    <color name="dark_green">#00897B</color>
+    <color name="dark_red">#B71C1C</color>
 </resources>

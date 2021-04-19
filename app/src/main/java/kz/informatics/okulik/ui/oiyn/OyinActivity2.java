@@ -215,7 +215,7 @@ public class OyinActivity2 extends AppCompatActivity implements View.OnClickList
             }
         }, 1500);
     }
-    
+
     public boolean checker(){
         if(resChoice1 == 1){
             if(!namesList.contains(tv_res1.getText().toString())){

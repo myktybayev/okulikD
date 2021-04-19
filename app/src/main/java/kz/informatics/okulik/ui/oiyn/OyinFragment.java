@@ -20,7 +20,7 @@ import androidx.lifecycle.ViewModelProvider;
 import kz.informatics.okulik.R;
 
 public class OyinFragment extends Fragment {
-    RelativeLayout rl_oyin1, rl_oyin2;
+    RelativeLayout rl_oyin1, rl_oyin2, rl_oyin3, rl_oyin4;
     View root;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -39,6 +39,8 @@ public class OyinFragment extends Fragment {
 
         rl_oyin1 = root.findViewById(R.id.rl_oyin1);
         rl_oyin2 = root.findViewById(R.id.rl_oyin2);
+        rl_oyin3 = root.findViewById(R.id.rl_oyin3);
+        rl_oyin4 = root.findViewById(R.id.rl_oyin4);
         rl_oyin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +52,19 @@ public class OyinFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), OyinActivity2.class));
+            }
+        });
+
+        rl_oyin3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OiynActivity3.class));
+            }
+        });
+        rl_oyin4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), OyinActivity4.class));
             }
         });
 

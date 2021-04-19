@@ -27,6 +27,7 @@ public class AboutFragment extends Fragment {
     View root;
     StoreDatabase storeDatabase;
     SQLiteDatabase sqLiteDatabase;
+    Button btnLogOut;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -39,18 +40,19 @@ public class AboutFragment extends Fragment {
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(getActivity(), R.color.user_back));
+        btnLogOut = root.findViewById(R.id.btnLogOut);
 
-//        btnLogOut.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                ContentValues userValue = new ContentValues();
-//                userValue.put(COLUMN_LOGIN, "no");
-//                sqLiteDatabase.update(TABLE_SLOGINS, userValue, "login = ?", new String[]{"yes"});
-//
-//                startActivity(new Intent(getActivity(), LoginByEmailPage.class));
-//            }
-//        });
+        btnLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                ContentValues userValue = new ContentValues();
+                userValue.put(COLUMN_LOGIN, "no");
+                sqLiteDatabase.update(TABLE_SLOGINS, userValue, "login = ?", new String[]{"yes"});
+
+                startActivity(new Intent(getActivity(), LoginByEmailPage.class));
+            }
+        });
 
         return root;
     }

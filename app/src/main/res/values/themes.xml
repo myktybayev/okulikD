@@ -34,4 +34,17 @@
         <item name="colorControlActivated">@color/purple_500</item>
     </style>
 
+    <style name="button_number_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_basilganda</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>

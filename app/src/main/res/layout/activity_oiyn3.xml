@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".ui.oiyn.OiynActivity3">
+
+    <TextView
+        android:id="@+id/tvUpai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Ұпай: 0"
+        android:textColor="@color/dark_green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUpai"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Почтаны дұрыс жина"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tv_userNameResCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl"
+        android:layout_below="@id/tv"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="почта"
+            android:textColor="@color/grey"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:textColor="@color/dark_green"
+            android:visibility="gone"
+            android:text="yahoo"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnCheck"
+        android:gravity="center_horizontal">
+
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/button_number_style"
+                android:text="'@" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/button_number_style"
+                android:text="gmail" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/button_number_style"
+                android:text="com" />
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/button_number_style"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/button_number_style"
+                android:text="kirmizi071" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnBitiru"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_back3"
+        android:text="Келесі"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnBitiru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_back2"
+        android:text="Ойынды бітіру"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

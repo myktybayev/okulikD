@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Okulik">
+
+        <activity android:name=".ui.oiyn.OyinActivity4"/>
+        <activity android:name=".ui.oiyn.OiynActivity3"/>
         <activity android:name=".ui.oiyn.OyinActivity2"/>
         <activity android:name=".ui.oiyn.OyinActivity1" />
         <activity android:name=".ui.bolimder.OiyndarActivity" />

@@ -1,5 +1,6 @@
 package kz.informatics.okulik.ui.cabinet;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -42,7 +43,7 @@ public class CabinetFragment extends Fragment {
     StoreDatabase storeDatabase;
     SQLiteDatabase sqLiteDatabase;
     TextView sInfo, sEmail, sClass;
-    Button btn_oyin1, btn_oyin2, btn_oyin3;
+    TextView btn_oyin1, btn_oyin2, btn_oyin3, btn_oyin4, btn_oyin5, btn_oyin6;
     String oiynUpai1 = "0", oiynUpai2 = "0", oiynUpai3 = "0", oiynUpai4 = "0", oiynUpai5 = "0", oiynUpai6 = "0";
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -54,6 +55,9 @@ public class CabinetFragment extends Fragment {
         btn_oyin1 = root.findViewById(R.id.btn_oyin1);
         btn_oyin2 = root.findViewById(R.id.btn_oyin2);
         btn_oyin3 = root.findViewById(R.id.btn_oyin3);
+        btn_oyin4 = root.findViewById(R.id.btn_oyin4);
+        btn_oyin5 = root.findViewById(R.id.btn_oyin5);
+        btn_oyin6 = root.findViewById(R.id.btn_oyin6);
 
         storeDatabase = new StoreDatabase(getActivity());
         sqLiteDatabase = storeDatabase.getWritableDatabase();
@@ -69,6 +73,7 @@ public class CabinetFragment extends Fragment {
         return root;
     }
 
+    @SuppressLint({"DefaultLocale", "SetTextI18n"})
     public void initStudent() {
 
         Cursor loginCursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_SLOGINS + " WHERE " +
@@ -110,7 +115,9 @@ public class CabinetFragment extends Fragment {
 //                    String testUpai = gameCursor.getString(gameCursor.getColumnIndex(COLUMN_UPAI));
 //                    btn_oyin1.setText("Танымал браузерлермен танысу ойыны: " + testUpai + " ұпай");
                  */
-                Cursor gameCursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_GAMES, null);
+
+                Cursor gameCursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_GAMES + " WHERE " +
+                        COLUMN_EMAIL + "=?", new String[]{email});
 
                 if (gameCursor != null & gameCursor.getCount() > 0) {
                     while (gameCursor.moveToNext()) {
@@ -143,10 +150,13 @@ public class CabinetFragment extends Fragment {
 
                 }
 
-
-                btn_oyin1.setText("Танымал браузерлермен танысу ойыны: \n" + oiynUpai1 + " ұпай");
-                btn_oyin2.setText("Почтаны сәйкестендіру ойыны: \n" + oiynUpai2 + " ұпай");
-                btn_oyin3.setText("Почтаны дұрыс жина ойыны: \n" + oiynUpai3 + " ұпай");
+                ;
+                btn_oyin1.setText( oiynUpai1+ " ұпай");
+                btn_oyin2.setText( oiynUpai2 + " ұпай");
+                btn_oyin3.setText( oiynUpai3 + " ұпай");
+                btn_oyin4.setText( oiynUpai4 + " ұпай");
+                btn_oyin5.setText( oiynUpai5 + " ұпай");
+                btn_oyin6.setText( oiynUpai6 + " ұпай");
 
             }
 
